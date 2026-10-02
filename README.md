@@ -1,1 +1,1 @@
-https://madhuupatel.netlify.apo
+https://madhuupatel.netlify.app
