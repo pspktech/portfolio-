@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>Madhu Patel — Developer & Creator</title>
+<meta name="description" content="Madhu Patel — web & app developer from India. Overthinker, hacker, gamer, traveller.">
+<meta name="theme-color" content="#0e0e10">
+
+<meta property="og:title" content="Madhu Patel — Developer & Creator">
+<meta property="og:description" content="Web & app developer. Overthinker, hacker, gamer, traveller.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">Madhu<span>.</span></a>
+
+    <nav class="nav-links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="container">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <span class="status">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="status-text">Online — Available for projects</span>
+      </span>
+
+      <h1>Madhu <span class="mark">Patel</span></h1>
+
+      <p class="typewriter-line">
+        <span class="prompt">&gt;</span>
+        <span class="typed" id="typed"></span><span class="caret" aria-hidden="true"></span>
+      </p>
+
+      <p class="bio">
+        Self-taught developer from India building web apps, AI bots
+        and digital products. I break things to learn how they work —
+        then rebuild them better.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">
+          View Projects <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
+        </a>
+        <a class="btn btn-ghost" href="https://t.me/madhupatelpspk" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+          @madhupatelpspk
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="photo-frame">
+        <span class="photo-initials" aria-hidden="true">MP</span>
+        <img src="profile.jpg" alt="Madhu Patel" onerror="this.remove()">
+      </div>
+      <span class="blob" aria-hidden="true"></span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= ABOUT — EDITOR ILLUSION ================= -->
+<section class="about" id="about">
+  <div class="container about-grid">
+
+    <div class="about-text">
+      <span class="eyebrow">About Me</span>
+      <h2>Overthinker by nature,<br>builder by habit.</h2>
+      <p>
+        I'm Madhu Patel — a self-taught developer who turns small ideas
+        into real, working products. Most of my time goes into writing
+        code, experimenting with bots and automation, and shipping
+        projects end-to-end.
+      </p>
+      <p>
+        Outside the editor you'll find me gaming, travelling, or
+        overthinking a problem that probably had a one-line fix.
+      </p>
+
+      <div class="dev-cards">
+        <div class="dev-card">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <h3>Web Development</h3>
+          <p>Responsive websites, landing pages and full-stack web apps.</p>
+        </div>
+        <div class="dev-card">
+          <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+          <h3>App Development</h3>
+          <p>Mobile-focused apps and automation tools for daily use.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Editor window -->
+    <div class="editor" aria-hidden="true">
+      <div class="editor-bar">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="editor-file">madhu.js</span>
+      </div>
+      <div class="editor-body" id="editorBody">
+        <!-- lines injected by JS -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+  <div class="container">
+
+    <div class="section-head">
+      <span class="eyebrow">Projects &amp; Skills</span>
+      <h2>My Projects</h2>
+    </div>
+
+    <div class="project-grid">
+
+      <!-- 01 -->
+      <article class="project-card tilt">
+        <div class="project-preview preview-bot">
+          <span class="orb orb-1" aria-hidden="true"></span>
+          <span class="orb orb-2" aria-hidden="true"></span>
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span class="preview-tag">AI Automation</span>
+        </div>
+        <div class="project-body">
+          <span class="project-index">01 — BOT</span>
+          <h3>WhatsApp AI Bot</h3>
+          <p>
+            An AI-powered WhatsApp bot that replies to messages
+            automatically using an AI API — built on Node.js.
+          </p>
+          <div class="chips">
+            <span>Node.js</span><span>Express.js</span><span>AI API</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm btn-primary" href="https://t.me/madhupatelpspk" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-telegram" aria-hidden="true"></i> DM for Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="project-card tilt">
+        <div class="project-preview preview-pickle">
+          <span class="orb orb-1" aria-hidden="true"></span>
+          <span class="orb orb-2" aria-hidden="true"></span>
+          <i class="fa-solid fa-jar" aria-hidden="true"></i>
+          <span class="preview-tag">E-Commerce</span>
+        </div>
+        <div class="project-body">
+          <span class="project-index">02 — WEBSITE</span>
+          <h3>Nandhu Pickles</h3>
+          <p>
+            Homemade pickles store with product showcase, gallery
+            and one-tap WhatsApp ordering.
+          </p>
+          <div class="chips">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm btn-lime" href="https://nandhupickles.netlify.app" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live
+            </a>
+            <a class="btn btn-sm" href="https://t.me/madhupatelpspk" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-telegram" aria-hidden="true"></i> DM for Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="project-card tilt">
+        <div class="project-preview preview-vya">
+          <span class="orb orb-1" aria-hidden="true"></span>
+          <span class="orb orb-2" aria-hidden="true"></span>
+          <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+          <span class="preview-tag">Community</span>
+        </div>
+        <div class="project-body">
+          <span class="project-index">03 — WEBSITE</span>
+          <h3>Vigneshwara Youth Group</h3>
+          <p>
+            Community website — events, members, gallery and
+            announcements in a responsive layout.
+          </p>
+          <div class="chips">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Netlify</span>
+          </div>
+          <div class="project-actions">
+            <a class="btn btn-sm btn-lime" href="https://teamvya.netlify.app" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Live
+            </a>
+            <a class="btn btn-sm" href="https://t.me/madhupatelpspk" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-telegram" aria-hidden="true"></i> DM for Code
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SKILLS — COMPACT ================= -->
+<section class="skills" id="skills">
+  <div class="container">
+
+    <div class="section-head">
+      <span class="eyebrow">Toolkit</span>
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skill-row">
+      <span class="skill-pill"><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</span>
+      <span class="skill-pill"><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</span>
+      <span class="skill-pill"><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</span>
+      <span class="skill-pill"><i class="fa-brands fa-node-js" aria-hidden="true"></i> Node.js</span>
+      <span class="skill-pill"><i class="fa-solid fa-server" aria-hidden="true"></i> Express.js</span>
+      <span class="skill-pill"><i class="fa-brands fa-telegram" aria-hidden="true"></i> Telegram Bots</span>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-band" id="contact">
+  <div class="container contact-grid">
+
+    <div>
+      <span class="eyebrow">Contact</span>
+      <h2>Let's build<br>something.</h2>
+      <p class="contact-sub">
+        Got an idea, a project, or want the source code? DM me on
+        Telegram — I reply fast.
+      </p>
+    </div>
+
+    <div>
+      <a class="contact-link" href="https://t.me/madhupatelpspk" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+        <span class="contact-meta">
+          <strong>Telegram</strong>
+          <small>@madhupatelpspk</small>
+        </span>
+        <i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i>
+      </a>
+
+      <a class="contact-link" href="https://instagram.com/____madhu_patel____" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <span class="contact-meta">
+          <strong>Instagram</strong>
+          <small>@____madhu_patel____</small>
+        </span>
+        <i class="fa-solid fa-arrow-right arrow" aria-hidden="true"></i>
+      </a>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 Madhu Patel — Built with code &amp; overthinking.
+    </div>
+  </footer>
+</section>
+
+
+<script>
+/* ================= TYPEWRITER (Hero) ================= */
+const typedEl = document.getElementById('typed');
+const words = [
+  'Web Developer',
+  'App Builder',
+  'Bot Creator',
+  'Automation Nerd',
+  'Gamer',
+  'Traveller'
+];
+let wIdx = 0, cIdx = 0, deleting = false;
+
+function typeLoop(){
+  const word = words[wIdx];
+  if (!deleting){
+    typedEl.textContent = word.slice(0, ++cIdx);
+    if (cIdx === word.length){
+      deleting = true;
+      setTimeout(typeLoop, 1400);
+      return;
+    }
+  } else {
+    typedEl.textContent = word.slice(0, --cIdx);
+    if (cIdx === 0){
+      deleting = false;
+      wIdx = (wIdx + 1) % words.length;
+    }
+  }
+  setTimeout(typeLoop, deleting ? 45 : 90);
+}
+typeLoop();
+
+
+/* ================= EDITOR ILLUSION (About) ================= */
+const editorBody = document.getElementById('editorBody');
+
+const editorLines = [
+  { type:'cmt',  text:'// madhu.js — who I am' },
+  { type:'key',  text:'const', sym:' madhu', op:' = ', val:'{' },
+  { type:'pln',  text:'  role:     ' , val:'"Developer"' },
+  { type:'pln',  text:'  stack:    ' , val:'["Node","Express"]' },
+  { type:'pln',  text:'  loves:    ' , val:'["code","gaming","travel"]' },
+  { type:'pln',  text:'  motto:    ' , val:'"build > talk"' },
+  { type:'pln',  text:'  online:   ' , val:'true' },
+  { type:'val',  text:'}' },
+  { type:'cmt',  text:'' },
+  { type:'key',  text:'madhu', op:'.', fn:'ship', val:'("idea")  // → production' }
+];
+
+let li = 0;
+
+function renderLine(line){
+  const el = document.createElement('div');
+  el.className = 'line';
+
+  const gutter = document.createElement('span');
+  gutter.className = 'gutter';
+  gutter.textContent = String(li + 1).padStart(2, '0');
+  el.appendChild(gutter);
+
+  const code = document.createElement('span');
+  code.className = 'code';
+
+  if (line.type === 'cmt'){
+    code.innerHTML = `<span class="c-cmt">${line.text}</span>`;
+  } else if (line.type === 'key'){
+    code.innerHTML = `<span class="c-key">${line.text}</span>${line.sym||''}${line.op||''}<span class="c-fn">${line.fn||''}</span>${line.val ? `<span class="c-val">${line.val}</span>` : ''}`;
+  } else if (line.type === 'val'){
+    code.innerHTML = `<span class="c-val">${line.text}</span>`;
+  } else {
+    code.innerHTML = `<span class="c-var">${line.text}</span>${line.val ? `<span class="c-val">${line.val}</span>` : ''}`;
+  }
+
+  el.appendChild(code);
+  return el;
+}
+
+function typeEditor(){
+  if (li >= editorLines.length){
+    // restart after pause
+    setTimeout(() => {
+      editorBody.innerHTML = '';
+      li = 0;
+      typeEditor();
+    }, 3200);
+    return;
+  }
+
+  const line = editorLines[li];
+  const el = renderLine({ ...line, text:'' });
+  editorBody.appendChild(el);
+  li++;
+
+  const codeSpan = el.querySelector('.code');
+  const fullHTML = renderLine(line).querySelector('.code').innerHTML;
+
+  // type char by char (approx)
+  let i = 0;
+  const speed = line.type === 'cmt' ? 22 : 12;
+  function tick(){
+    if (i >= fullHTML.length){
+      setTimeout(typeEditor, 120);
+      return;
+    }
+    // skip over tags for smooth typing
+    const next = fullHTML.indexOf('<', i);
+    if (next === i){
+      const end = fullHTML.indexOf('>', i);
+      i = end + 1;
+      codeSpan.innerHTML = fullHTML.slice(0, i);
+    } else {
+      i = (next === -1) ? fullHTML.length : next;
+      codeSpan.innerHTML = fullHTML.slice(0, i);
+    }
+    setTimeout(tick, speed);
+  }
+  tick();
+}
+typeEditor();
+
+
+/* ================= MOBILE MENU ================= */
+const toggle = document.getElementById('navToggle');
+const menu   = document.getElementById('mobileMenu');
+
+toggle.addEventListener('click', () => {
+  const open = menu.classList.toggle('open');
+  toggle.classList.toggle('open', open);
+  toggle.setAttribute('aria-expanded', open);
+});
+
+menu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    menu.classList.remove('open');
+    toggle.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+
+/* ================= NAV SCROLL STATE ================= */
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 10);
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+
+/* ================= PROJECT CARD MOUSE TILT ================= */
+const tilts = document.querySelectorAll('.tilt');
+const isFine = window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+if (isFine){
+  tilts.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const r = card.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width  - .5;
+      const y = (e.clientY - r.top)  / r.height - .5;
+      card.style.transform =
+        `perspective(900px) rotateY(${x * 6}deg) rotateX(${-y * 6}deg) translateY(-6px)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+    });
+  });
+}
+</script>
+
+</body>
+</html>
