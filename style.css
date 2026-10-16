@@ -653,3 +653,118 @@ section[id]{scroll-margin-top:90px}
   .orb,
   .status-dot::after{animation:none !important}
 }
+/* ============ MyInstaPro Project ============ */
+
+.project-card.featured {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 20, 147, 0.08), rgba(138, 43, 226, 0.08));
+  border: 1px solid rgba(255, 20, 147, 0.3);
+  padding: 24px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card.featured:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(255, 20, 147, 0.2);
+}
+
+.project-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, #ff1493, #8a2be2);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+}
+
+.project-desc {
+  color: var(--text-muted, #a0a0a0);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 12px 0 20px;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff1493, #8a2be2);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(255, 20, 147, 0.4);
+}
+
+.btn-verified {
+  background: #1d9bf0;
+  color: #fff;
+}
+
+.btn-verified:hover {
+  background: #1a8cd8;
+  transform: scale(1.04);
+  box-shadow: 0 6px 20px rgba(29, 155, 240, 0.4);
+}
+
+.btn-updates {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-updates:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #fff;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.project-tags span {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text-muted, #a0a0a0);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Mobile — stack buttons */
+@media (max-width: 600px) {
+  .project-actions {
+    flex-direction: column;
+  }
+  .btn {
+    justify-content: center;
+    width: 100%;
+  }
+}
