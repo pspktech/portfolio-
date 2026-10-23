@@ -1,0 +1,36 @@
+/* Navbar fixes for injected partial */
+.navbar { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px); }
+.nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+.nav-links { display: flex; gap: 2rem; list-style: none; }
+.nav-links a.active { color: #00d9ff; font-weight: 600; }
+.menu-toggle { display: none; background: none; border: none; font-size: 1.8rem; color: inherit; cursor: pointer; }
+
+@media (max-width: 768px) {
+  .menu-toggle { display: block; }
+  .nav-links {
+    display: none; flex-direction: column;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: #111; padding: 1.5rem;
+  }
+  .nav-links.open { display: flex; }
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.project-card {
+  padding: 1.5rem; border-radius: 12px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform 0.2s;
+}
+.project-card:hover { transform: translateY(-4px); }
+
+/* Project detail */
+.project-detail { max-width: 800px; margin: 4rem auto; padding: 0 1.5rem; }
+.back-link { color: #00d9ff; text-decoration: none; }
+.project-image { width: 100%; border-radius: 12px; margin: 2rem 0; }
