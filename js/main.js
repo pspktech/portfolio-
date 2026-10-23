@@ -54,3 +54,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   initMobileMenu();
   setYear();
 });
+
+// Cursor glow on project cards
+document.addEventListener('mousemove', (e) => {
+  document.querySelectorAll('.project-card').forEach(card => {
+    const rect = card.getBoundingClientRect();
+    if (e.clientX >= rect.left && e.clientX <= rect.right &&
+        e.clientY >= rect.top && e.clientY <= rect.bottom) {
+      card.style.setProperty('--mx', (e.clientX - rect.left) + 'px');
+      card.style.setProperty('--my', (e.clientY - rect.top) + 'px');
+    }
+  });
+});
